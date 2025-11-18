@@ -1,6 +1,8 @@
 $color-primary: #000;        
 $color-white: #fff;
 
+$bg-dark: #222430;
+
 $font-main: 'Roboto Mono', monospace;
 $font-inter: "Inter", sans-serif;
 
@@ -8,11 +10,11 @@ $radius-pill: 50px;
 $radius-md: 50px;
 $radius-sm: 4px;
 
-$fs-xxs: 0.75rem;    
-$fs-xs: 0.875rem;    // 15.75px (~16px)
-$fs-sm: 1rem;        // 18px base
-$fs-md: 1.125rem;    // 20.25px (~20px)
-$fs-lg: 1.25rem;     // 22.5px (~22px)
-$fs-xl: 1.5rem;      // 27px
-$fs-xxl: 2rem;       // 36px
-$fs-xxxl: 3rem;      // 54px (perfect for hero)
+$fs-xxs: 14px;    
+$fs-xs: 16px; 
+$fs-sm: 18px;       
+$fs-md: 20px;  
+$fs-lg: 22px;  
+$fs-xl: 24px;      
+$fs-xxl: 36px;    
+$fs-xxxl: 54px;      
