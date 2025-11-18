@@ -1,0 +1,65 @@
+.hero {
+    height: 757px;
+    padding: 90px 88px;
+    background: linear-gradient(
+      232deg,
+      rgba(70, 78, 112, 1) 0%,
+      rgba(32, 55, 70, 1) 100%
+    );
+
+    .hero-container {
+        width: calc(100vw - 160px);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        position: relative;
+        .hero-main-img{
+            position: absolute;
+            width: 611.98px;
+            right: 30px;
+            top: -30px;
+        }
+
+        .hero-text-main{
+            h1{
+                color: rgba(255, 250, 246, 1);
+                font-family: $font-inter;
+                font-size: 64px;
+                font-weight: 900;
+                letter-spacing: -1.07px;
+                text-transform: uppercase;
+                line-height: 55px;
+                margin-bottom: 19px;
+            }
+            p{
+                color: $color-white;
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: uppercase;
+                line-height: 24px;
+                margin-bottom: 21px;
+            }
+
+        }
+        .hero-review {
+            color: $color-white;
+            font-family: $font-main;
+            .review-stars{
+                margin-bottom: 10px
+            }
+            .reviewer{
+                @include flex-simple;
+                margin-top: 18px;
+                img{
+                    width: 39px;
+                    height: 39px;
+                    margin-right: 9px;
+                }
+            }
+        }
+
+    }
+  }
+  
