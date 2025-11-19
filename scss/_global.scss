@@ -17,6 +17,8 @@ body {
   line-height: 1.5;
   color: $color-primary;
   -webkit-font-smoothing: antialiased;
+  background-color: rgba(239, 247, 250, 1);
+  color: $color-secondary;
 }
 
 ul, p{
@@ -46,6 +48,9 @@ img {
   background-color: rgba(255, 186, 0, 1);
   @include flex-center;
   color: $color-primary;
+  @include respond-max($bp-xs) {
+    margin: 0 auto;
+  }
 }
 
 

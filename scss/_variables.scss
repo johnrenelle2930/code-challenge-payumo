@@ -1,7 +1,8 @@
 $color-primary: #000;        
+$color-secondary: #2E302E;
 $color-white: #fff;
-
 $bg-dark: #222430;
+$color-off-white: #FFFAF6;
 
 $font-main: 'Roboto Mono', monospace;
 $font-inter: "Inter", sans-serif;
@@ -16,5 +17,14 @@ $fs-sm: 18px;
 $fs-md: 20px;  
 $fs-lg: 22px;  
 $fs-xl: 24px;      
-$fs-xxl: 36px;    
-$fs-xxxl: 54px;      
+$fs-xxl: 64px;    
+$fs-xxxl: 80px;      
+
+$container-width: 1264px;
+$m-center: 0 auto;
+
+$bp-xl: 1400px;
+$bp-lg: 1200px;
+$bp-md: 992px;
+$bp-sm: 768px;
+$bp-xs: 576px;

@@ -2,7 +2,6 @@
     background-color: #ffba00;
     @include flex-center;
     padding: 0.4rem 0;  
-  
     p {
       margin: 0;        
       font-family: $font-main;
@@ -15,11 +14,14 @@
 
 header{
     border-bottom: 1px solid $color-primary;
+    background: $color-white;
     .header-container{
         height: 65px;
         @include flex-between;
         padding: 5px 20px;
-
+        @include respond-max($bp-xs) {
+            padding: 5px 2.5%;
+          }
         .header-left{
             @include flex-simple;
             .logo {
@@ -38,6 +40,11 @@ header{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @include respond-max($bp-xs) {
+                    width: 120px;
+                    height: 30px;
+                    font-size: 14px;
+                  }
             }
 
             .cart{
@@ -45,6 +52,9 @@ header{
                 height: 32.88px;
                 margin-left: 20px;
                 position: relative;
+                @include respond-max($bp-xs) {
+                    margin-left: 8px;
+                  }
             }
         }     
     }

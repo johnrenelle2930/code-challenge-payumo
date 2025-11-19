@@ -21,6 +21,12 @@
   justify-content: space-between;
 }
 
+@mixin flex-between-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 @mixin flex-start {
   display: flex;
   align-items: center;
@@ -31,4 +37,17 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+
+@mixin respond-max($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin respond-min($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
 }

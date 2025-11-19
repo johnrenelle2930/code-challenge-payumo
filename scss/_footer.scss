@@ -5,7 +5,9 @@ footer{
     .footer-container{
         max-width: 1264px;
         margin: 0 auto;
-
+        @include respond-max($bp-xs) {
+                padding: 0 5%;
+            }
         .footer-newsletter{
             margin-bottom: 50px;
             .main-text{
@@ -67,6 +69,10 @@ footer{
             margin-bottom: 53px;
             .footer-column {
                 margin-right: 37px;
+                @include respond-max($bp-xs) {
+                    margin-right: 0;
+                    width: 50%;
+                }
                 h4 {
                     color: $color-white;
                     font-family: $font-inter;
@@ -88,25 +94,32 @@ footer{
         }
         .footer-bottom{
             position: relative;
+            @include respond-max($bp-xs) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
             .footer-copy{
                 color: #EFF7FA;
                 opacity: 0.4;
                 font-size: 14px;
             }
             .footer-disclaimer{
-                border: 2px solid rgba(255, 255, 255, 1);
+                border: 2px solid rgba(255, 255, 255, 0.1);
                 border-radius: 17px;
-                opacity: 0.1;
                 width: 300px;
-                padding: 13px;
+                padding: 13px 6px 11px 14px;
                 position: absolute;
                 right: 0;
                 bottom: 0;
+                @include respond-max($bp-xs) {
+                    position: relative;
+                    margin-bottom: 5%;
+                }
                 p{
-                    color: rgba(239, 247, 250, 1);
-                    font-size: 12px;
                     font-size: 11px;
                     line-height: 13px;
+                    color: #EFF7FA;
+                    opacity: 0.4;
                 }
             }
         }
