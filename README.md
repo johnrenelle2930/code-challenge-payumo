@@ -1,47 +1,91 @@
-# Foundation for Sites Template
+D1 Web Shop – Code Challenge
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+24-Hour Frontend Implementation
 
-This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
+This project is my implementation for the D1 Web Shop Homepage based on the design provided in the Sketch mockup.
+The goal was to translate the wireframes into a pixel-perfect, responsive, scalable, and maintainable front-end using Foundation Sites, SCSS, and modern web best practices.
 
-## Installation
+Requirements Completed
 
-To use this template, your computer needs:
+Build the homepage exactly from the provided wireframe
+Fully implemented the D1 homepage layout
+All typography, spacing, and layout matched to design as closely as possible
+All assets extracted from the Sketch file and optimized
 
-- [NodeJS](https://nodejs.org/en/) (12 or greater)
-- [Git](https://git-scm.com/)
+responsive
+Mobile and desktop support
+Section-level responsive SCSS using breakpoint mixins
+Flexible layout with proper spacing and stacking behavior
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
+Foundation Framework used
+Installed using the Foundation starter template
 
-### Using the CLI
 
-Install the Foundation CLI with this command:
+SCSS Architecture
+Modular component-based SCSS
+Variables, mixins, and breakpoints created for maintainability
+Avoided inline styles or CSS clutter
 
-```bash
-npm install foundation-cli --global
-```
+scss/
+  _settings.scss      // Foundation settings
+  _variables.scss     // Colors, fonts, spacing, radius, breakpoints
+  _mixins.scss        // Flex utilities, responsive mixins
+  _global.scss        // Reset + base styles
+  _header.scss        // Topbar, navbar
+  _hero.scss          // Hero section
+  _top.scss           // All main sections after hero
+  _footer.scss        // Footer section
+  app.scss            // Main compiled SCSS importing all above
 
-Use this command to set up a blank Foundation for Sites project with this template:
 
-```bash
-foundation new --framework sites --template basic
-```
+Tech Stack
+Front-End
 
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
+HTML5
+CSS3 / SCSS
+Foundation 6
+JavaScript (minimal)
+Build Tools
+Gulp
+Dart Sass
 
-### Manual Setup
+Folder Structure
+├── assets/
+│   └── images/        # Exported images & icons from Sketch
+│
+├── scss/
+│   ├── _header.scss
+│   ├── _hero.scss
+│   ├── _top.scss
+│   ├── _footer.scss
+│   ├── _variables.scss
+│   ├── _mixins.scss
+│   ├── _settings.scss
+│   ├── _global.scss
+│   └── app.scss
+│
+├── js/
+│   └── app.js
+│
+├── index.html
+├── gulpfile.js
+├── package.json
+└── README.md
 
-To manually set up the template, first download it with Git:
+Installation & Running Locally
+1. Clone the repository
+git clone https://github.com/johnrenelle2930/code-challenge-payumo.git
 
-```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
-```
+2. Install dependencies
+yarn install
 
-Then open the folder in your command line, and install the needed dependencies:
+3. Start the development server
+yarn start
 
-```bash
-cd projectname
-npm install
-```
+This will compile SCSS, watch for changes, and spin up a local dev environment.
 
-Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
+Notes
+
+All assets were exported from the provided Sketch mockup.
+Layout and spacing were matched according to the design.
+Code is structured with scalability in mind to accommodate future pages and components.
